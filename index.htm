@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Aziza Design Studio, aziza dizayn, dizayn xidmetleri, dizayn temir, interyer dizayn, eksteryer dizayn xidmetleri, bakida dizayn sirketleri">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/844220f695.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="get-orderLabel">Qiymət təklifi</h5>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form custom-form">
+                                    <form method="post">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <input required="" type="text" name="isim" class="effect" placeholder="Ad, Soyad">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input required="" type="text" name="telefon" class="effect" placeholder="Telefon nömrəniz">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <select name="dizayn" class="effect" required="">
+                                                  <option selected="selected" disabled="" value="">-- Dizayn üslubu seçin --</option>
+                                                  <option value="Loft">Loft</option>
+                                                  <option value="Art-Deco">Art-Deco</option>
+                                                  <option value="Modern">Modern</option>
+                                                  <option value="Lux modern">Lux modern</option>
+                                                  <option value="Neoklassika">Neoklassika</option>
+                                                  <option value="Klassika">Klassika</option>
+                                                  <option value="Avanqard">Avanqard</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input required="" type="text" name="sahe" class="effect" placeholder="Mənzilinizin kvadratı">
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <textarea rows="6" name="mesaj" class="effect" placeholder="Qeydləriniz"></textarea>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <input class="btn submit-btn" type="submit" name="submit" value="Göndər">
+                                            <div class="loading"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-top">
+                <div class="container">
+                    <div class="navbar">
+                        <div class="menu-wrapper">
+                            <div class="menu-btn menu-wrap">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                            <div class="menu">
+                                <nav>
+                                   <ul>
+                                    <li class="nav-item">
+                                        <a class="nav-link " id="About1" href="/about/">Haqqımızda</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " id="allServices1" href="/services/">Bütün xidmətlər</a>
+                                    </li>
+                                    <li class="nav-item"> 
+                                        <a class="nav-link" id="ourTeam1" href="/team/">Komandamız</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " id="Showroom1" href="#">Showroom</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " id="Contact1" href="/contact">Əlaqə</a>
+                                    </li>
+                                   </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <a class="navbar-brand">
+                            <img src="/img/logo (2).png" alt="">
+                        </a>
+                        <div class="collapse navbar-collapse myMenu" id="myMenu">
+                            <ul class="navbar-nav">
+                                <li class="d-lg-none d-block close-menu">
+                                    <img src="/img/close-menuu.png" alt="close-menu">
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="About" href="/about/">Haqqımızda</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="allServices" href="/services/">Bütün xidmətlər</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="ourTeam" href="/team/">Komandamız</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="Showroom" href="/showroom/">Showroom</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="Contact" href="/contact">Əlaqə</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-nav">
+                            <div class="change-mood-wrap">
+                                <div class="mood-info">
+                                    <span class="dark-text" id="nightMood">Gecə rejiminə keç</span>
+                                    <span class="light-text" id="dayMood">Gündüz rejiminə keç</span>
+                                </div>
+                                <div class="navbar-menu"></div>
+                               
+                                <div class="change-mood box">
+                                    <div class="top">
+                                        <a href="#" class="themetoggle">
+                                            <span class="icon fa-moon-o span"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="lang-list d-none .d-sm-flex ">
+                                <li class="active"><a href="#" onclick="changeLanguage('az')">AZ</a></li>
+                                <li><a href="#" onclick="changeLanguage('en')"></button>EN</a></li>
+                                <li><a href="#" onclick="changeLanguage('ru')"></button>RU</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-bottom">
+                <div class="container">
+                    <nav class="navbar navbar-expand">
+                        <div class="d-none" id="myMenu1">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" id="construction" href="/services/repair/">Təmir-tikinti</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="designService" href="/services/design/">Dizayn xidmətləri</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="Furniture" href="/services/furniture/">Mebel</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-nav">
+                            <ul class="lang-list d-sm-none d-flex">
+                                <li class="active ms-0"><a href="#">AZ</a></li>
+                                <li><a href="#">EN</a></li>
+                                <li><a href="#">RU</a></li>
+                            </ul>
+                            <!-- <a href="" class="order-btn" >
+                                <img src="/img/send.png" alt="order" /> Qiymət təklifi al
+                            </a> -->
+                            <button id="myBtn"><a href="" ><img src="/img/send.png" alt="order" /></a>Qiymət təklifi al</button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/img/slider/slid1.jpeg" alt=""><p class="image-text" id="text1">Dizayndan quraşdırmaya qədər <br> təhlükəsiz və səmərəli xidmətin <br> təmin edilməsi</p><p class="image-text-second" id="text11">Səmərəli xidmət</p></div>
+                        <div class="swiper-slide"><img src="/img/slider/slid2.jpg" alt=""><p class="image-text" id="text2">Yüksək keyfiyyətli mərtəbə <br> planları və ev vizualizasiyaları</p><p class="image-text-second" id="text22">Planlamanın təşkili</p></div>
+                        <div class="swiper-slide"><img src="/img/slider/slid3.jpeg" alt=""><p class="image-text" id="text3">Elm və incəliklə dizayn edilmiş <br> modul mətbəxlər</p><p class="image-text-second" id="text33">Modul mətbəxlər</p></div>
+                        <div class="swiper-slide"><img src="/img/slider/slid4.jpg" alt=""><p class="image-text" id="text4">Bina və ya yenidənqurma <br> layihəniz üçün dizayn <br> məsləhətlərini kəşf edin</p><p class="image-text-second" id="text44">Dizayn məsləhətləri</p></div>
+                        <div class="swiper-slide"><img src="/img/slider/slid5.jpg" alt=""><p class="image-text" id="text5">Uyğun qiymətli və üstün keyfiyyətli <br> materiallarla ev interyerləri</p><p class="image-text-second" id="text55">Keyfiyyətli material</p></div>
+                        <div class="swiper-slide"><img src="/img/slider/slid6.jpg" alt=""><p class="image-text" id="text6">Sevdiyiniz məkanı dizaynı üçün <br> ilhamınızı,məqsədlərinizi və <br> büdcənizi bizimlə bölüşün</p><p class="image-text-second" id="text66">Dizaynların hazırlanması</p></div>
+                        <div class="swiper-slide"><img src="/img/slider/slid7.jpg" alt=""><p class="image-text" id="text7">Ən yaxşı interyer idealarını və <br> planlaşdırma proqramını əldə <br> edin</p><p class="image-text-second" id="text77">İnteryer ideaları</p></div>
+                        <div class="swiper-slide"><img src="/img/slider/slid8.jpg" alt=""><p class="image-text" id="text8">Qonaq otağını qonaqpərvər <br> etmək üçün ideyalarla evinizin <br> tonunu təyin edin</p><p class="image-text-second" id="text88">Tonların seçilməsi</p></div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+            <section id="advantages">
+                <div class="container">
+                    <div class="advantage-row">
+                        <div class="advantage-box">
+                            <h5 id="advantage1">316-dan çox</h5>     
+                            <div class="info">
+                                <span id="advantageBox1">Layihə</span>
+                            </div>
+                            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.8 21.2a1 1 0 010-1.4l8.29-8.3-8.3-8.3a1 1 0 011.42-1.4l9 9a1 1 0 010 1.4l-9 9a1 1 0 01-1.42 0z"></path>
+                            </svg>
+                        </div>
+                        <div class="advantage-box">
+                            <h5 id="advantage2">11 illik</h5>     
+                            <div class="info">
+                                 <span id="advantageBox2">Təcrübə</span>
+                            </div>  
+                            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.8 21.2a1 1 0 010-1.4l8.29-8.3-8.3-8.3a1 1 0 011.42-1.4l9 9a1 1 0 010 1.4l-9 9a1 1 0 01-1.42 0z"></path>
+                            </svg>
+                        </div>
+                        <div class="advantage-box">
+                            <h5 id="advantage3">15-dən çox</h5>     
+                            <div class="info">
+                                 <span id="advantageBox3">Xidmət</span>
+                            </div>  
+                            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.8 21.2a1 1 0 010-1.4l8.29-8.3-8.3-8.3a1 1 0 011.42-1.4l9 9a1 1 0 010 1.4l-9 9a1 1 0 01-1.42 0z"></path>
+                            </svg> 
+                        </div>
+                        <div class="advantage-box">
+                            <h5 id="advantage4">1000-dən çox</h5>     
+                            <div class="info">
+                                <span id="advantageBox4">Məmnun müştəri</span>
+                            </div>  
+                            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.8 21.2a1 1 0 010-1.4l8.29-8.3-8.3-8.3a1 1 0 011.42-1.4l9 9a1 1 0 010 1.4l-9 9a1 1 0 01-1.42 0z"></path>
+                            </svg>  
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section id="services">
+            <div class="container">
+                <h4 class="title" id="title">İnteryer dizayn xidmətlərimiz</h4>
+                <div class="row justify-content-center">
+                    <div class="col-xl-3 col-lg-4 col-md-6 service-box-wrap">
+                        <div class="service-box" style="background-image: url(/img/eyvan.jpg)">
+                            <a href="/services/design/interior/eyvan/">
+                                <div class="service-info">
+                                    <h5 id="balcony">Eyvan</h5>
+                                    <p id="lookServices" class="margin">Xidmətə bax</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 service-box-wrap">
+                        <div class="service-box" style="background-image: url(/img/loft.jpg)">
+                            <a href="/services/design/interior/loft/">
+                                <div class="service-info">
+                                    <h5 id="loft">Loft</h5>
+                                    <p id="lookService" class="margin">Xidmətə bax</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 service-box-wrap">
+                        <div class="service-box" style="background-image: url(img/art-decor.jpeg)">
+                            <a href="/services/design/interior/artdeco/">
+                                <div class="service-info">
+                                    <h5 id="artDecor">Art-Decor</h5>
+                                    <p id="lookServices3" class="margin">Xidmətə bax</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 service-box-wrap">
+                        <div class="service-box" style="background-image: url(/img/modern.jpg)">
+                            <a href="/services/design/interior/modern/">
+                                <div class="service-info">
+                                    <h5 id="modern">Modern</h5>
+                                    <p id="lookServices4" class="margin">Xidmətə bax</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 service-box-wrap">
+                        <div class="service-box" style="background-image: url(/img/lux-modern.jpg)">
+                            <a href="/services/design/interior/luxury-modern/">
+                                <div class="service-info">
+                                    <h5 id="luxModern">Lux modern</h5>
+                                    <p id="lookServices5" class="margin">Xidmətə bax</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 service-box-wrap">
+                        <div class="service-box" style="background-image: url(/img/neoklassika.jpg)">
+                            <a href="/services/design/interior/neoclassic/">
+                                <div class="service-info">
+                                    <h5 id="neoklassika">Neoklassika</h5>
+                                    <p id="lookServices6" class="margin">Xidmətə bax</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 service-box-wrap">
+                        <div class="service-box" style="background-image: url(/img/klassika.jpg)">
+                            <a href="/services/design/interior/classics/">
+                                <div class="service-info">
+                                    <h5 id="classik">Klassika</h5>
+                                    <p id="lookServices7" class="margin">Xidmətə bax</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 service-box-wrap">
+                        <div class="service-box" style="background-image: url(/img/avangard.jpeg)">
+                            <a href="/services/design/interior/vanguard/">
+                                <div class="service-info">
+                                    <h5 id="avangard">Avanqard</h5>
+                                    <p id="lookServices8" class="margin">Xidmətə bax</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 service-box-wrap">
+                        <div class="service-box" style="background-image: url(/img/qarderob.jpg)">
+                            <a href="/services/design/interior/qarderob/">
+                                <div class="service-info">
+                                    <h5 id="qarderob">Qarderob</h5>
+                                    <p id="lookServ" class="margin">Xidmətə bax</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div>
+        </div>
+        <section id="other-services">
+            <div class="container">
+                <h4 class="title" id="otherService">Digər xidmətlərimiz</h4>
+                <div class="row justify-content-center">
+                    <div class="col-xl-3 col-lg-4 col-md-6 service-box-wrap">
+                        <div class="service-box" style="background-image: url(/img/eksteryer.jpeg)">
+                            <a href="/services/design/exterior/">
+                                <div class="service-info">
+                                    <h5 id="eksteryer2">Eksteryer</h5>
+                                    <p id="lookService20" class="margin">Xidmətə bax</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 service-box-wrap">
+                        <div class="service-box" style="background-image: url(/img/temir-tikinti.jpeg)">
+                            <a href="/services/repair/">
+                                <div class="service-info">
+                                    <h5 id="construction2">Təmir-tikinti</h5>
+                                    <p id="lookService21" class="margin">Xidmətə bax</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 service-box-wrap">
+                        <div class="service-box" style="background-image: url(/img/mebel.jpeg)">
+                            <a href="/services/furniture/">
+                                <div class="service-info">
+                                    <h5 id="furniture2">Mebel</h5>
+                                    <p id="lookService22" class="margin">Xidmətə bax</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <div class="about-box">
+                    <div class="about-text">
+                        <h5 id="About2">Haqqımızda</h5>
+                        <p id="paragraph">Biz “Azizadesign” şirkəti olaraq 2013-cü ildən bu günədək çoxsaylı yüksək səviyyəli şirkətlərə və fərdi insanlara xidmətlərimizi təklif edərək həyatlarına və tərzlərinə uyğun fərdiləşdirilmiş evləri dizayn edir, avtomatlaşdırma sistemləri və yaradıcı smart məhsullarından istifadə edirik.</p>
+                        <a href="/about/" id="more">Ətraflı</a>
+                    </div>
+                    <div class="img-wrap">
+                        <img src="/img/phone.png" alt="phone">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="slogan">
+            <div class="container">
+                <div class="slogan-text">
+                    <h5 id="aziza">AZİZA DİZAYN</h5>
+                    <p id="adress">Zövqün ünvanı</p>
+                    <a href="javascript:void(0)" class="more-btn">
+                        <div class="border-1">
+                            <div class="border-2"></div>
+                        </div>
+                        <span id="seeProduct">Məhsullarımıza baxın</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="references">
+            <div class="container">
+                <h3 class="title text-center" id="trustUs">Bizə etibar edirlər</h3>
+                <div class="row justify-content-center">
+                    <div class="ref-box">
+                        <img src="/img/bravos.png" alt="reference">
+                    </div>
+                    <div class="ref-box">
+                        <img src="/img/azercell-logo.png" alt="reference">
+                    </div>
+                    <div class="ref-box">
+                        <img src="/img/kontakt1.png" alt="reference">
+                    </div>
+                    <div class="ref-box">
+                        <img src="/img/asan-xidmet.png" alt="reference">
+                    </div>
+                    <div class="ref-box">
+                        <img src="/img/stimul.png" alt="reference">
+                    </div>
+                    <div class="ref-box">
+                        <img src="/img/portbaku.png" alt="reference">
+                    </div>
+                    <div class="ref-box">
+                        <img src="/img/grand.png" alt="reference">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="call-to-action">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xxl-7 col-xl-6 col-lg-5">
+                        <h3 id="askQuestion">Sizin üçün buradayıq! <br>Sual verin, cavablandıraq</h3>
+                    </div>
+                    <div class="col-xxl-5 col-xl-6 col-lg-7">
+                        <div class="buttons">
+                            <a href="https://api.whatsapp.com/send?phone=++994509999339&amp;text=Salam, sizə www.azizadesign.az saytından yazıram." target="_blank" class="action-btn">
+                                <span id="whatsup">Whatsapp-a yazın</span>
+                                <div class="arrow">🡥</div>
+                            </a>
+                            <a href="javascript:void(0)" class="action-btn" data-bs-toggle="modal" data-bs-target="#get-call">
+                                <span id="call">Biz sizə zəng edək</span>
+                                <div class="arrow">🡥</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="section-top">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <h6 id="services3">Xidmətlər</h6>
+                            <ul class="footer-list">
+                                <li>
+                                    <a href="/services/repair/" id="construction3">Təmir-tikinti</a>
+                                </li>
+                                <li>
+                                    <a href="/services/design/" id="design3">Dizayn xidmətləri</a>
+                                </li>
+                                <li>
+                                    <a href="/services/furniture/" id="furniture3">Mebel</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <h6 id="project2">Layihələr</h6>
+                            <ul class="footer-list">
+                                <li>
+                                    <a href="№">Bravo</a>
+                                </li>
+                                <li>
+                                    <a href="№">Azercell</a>
+                                </li>
+                                <li>
+                                    <a href="№">Kontakt Home</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <h6 style="opacity:0"></h6>
+                            <ul class="footer-list">
+                                <li>
+                                    <p class="mb-0">Asan Xidmət</p>
+                                </li>
+                                <li>
+                                    <p class="mb-0">Stimul Hospital</p>
+                                </li>
+                                <li>
+                                    <p class="mb-0">Port Baku</p>
+                                </li>
+                                <li>
+                                    <p class="mb-0">Grand Hayat</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <h6 id="contact3">Əlaqə məlumatları</h6>
+                            <ul class="footer-list">
+                                <li>
+                                    <a href="tel:+994509999339">(+99450) 999 93 39</a>
+                                </li>
+                                <li>
+                                    <a href="mailto:info@azizadesign.az">info@azizadesign.az</a>
+                                </li>
+                                <li>
+                                    <address class="mb-0" style="color: #7c4e56" id="adress4">Azure Biznes Mərkəzi, 13-cü mərtəbə</address>
+                                </li>
+                                <li>
+                                    <p class="mb-0" style="color: #7c4e56" id="time">İş rejimi: 09:00 - 18:00 (həftə içi), <br> 09:00 - 17:00 (şənbə günü) </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="social-media">
+                        <li>
+                            <a href="https://www.facebook.com/AzizaDeluxe/?ref=page_internal" target="_blank">
+                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/azizadesignstudio" target="_blank">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank">
+                                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="change-lang-wrap">
+                        <ul class="lang-list" id="lang" style="opacity: 0; right: 0px;">
+                            <li class="active"><a href="/">AZ</a></li>
+                            <li><a href="/en/">EN</a></li>
+                            <li><a href="/ru/">RU</a></li>
+                        </ul>
+                        <div class="change-lang" id="changeLang">
+                            <span class="icon"></span>
+                            Dili dəyiş
+                        </div>
+                    </div>
+                </div>
+                <div class="section-bottom">
+                    <ul class="footer-list">
+                        <li class="active">
+                            <a href="/" id="home">Ana səhifə</a>
+                        </li>
+                        <li>
+                            <a href="/about/" id="about4">Haqqımızda</a>
+                        </li>
+                        <li>
+                            <a href="/services/" id="service5">Bütün xidmətlər</a>
+                        </li>
+                        <li>
+                            <a href="/team/" id="team2">Komandamız</a>
+                        </li>
+                        <li class="active">
+                            <a href="" id="showroom2">Showroom</a>
+                        </li>
+                        <li>
+                            <a href="/contact/" id="contact5">Əlaqə</a>
+                        </li>
+                    </ul>
+                    <div class="copyright-row">
+                        <span class="copyright" id="copyright">© Copyright 2022. Bütün hüquqları qorunur</span>
+                        <p id="site">Saytın hazırlanması: <a href="https://okmedia.az/" target="_blank"><img src="/img/okmedia.png" alt="okmedia logo"></a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+
+
+
+    <script src="/js/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="/js/language.js"></script>
+
+    
+    <script>
+        let swiper = new Swiper(".mySwiper", {
+          scrollbar: {
+            el: ".swiper-scrollbar",
+            hide: true,
+        },
+          autoplay: {
+            delay:2000,
+        },
+        });
+    </script>
+</body>
+</html>
